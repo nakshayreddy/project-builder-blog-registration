@@ -31,7 +31,9 @@ public class SignUpController extends HttpServlet {
 
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-	/*	String email = request.getParameter("email"); 
+		 RegistrationValidation ob1=new  RegistrationValidation();
+		 ob1.checkUserDetails(email,password, confirmPassword);
+		String email = request.getParameter("email"); 
 		String password = request.getParameter("password"); 
 		String confirmPassword = request.getParameter("confirmPassword"); 
 		LocalDateTime date= LocalDateTime.now(); 
@@ -58,7 +60,7 @@ public class SignUpController extends HttpServlet {
 			rd.forward(request, response);
 		}
 		
-		*/
+		
 	}
 
 }
